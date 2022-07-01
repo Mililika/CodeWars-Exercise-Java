@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class SmallestIntegerFinder {
     public static int findSmallestInt(int[] args) {
         int minimalValue = args[0];
@@ -9,4 +10,9 @@ public class SmallestIntegerFinder {
         return minimalValue;
     }
 
+
+    public static int findSmallestIntBetter(int[] array) {
+        Arrays.sort(array);
+        return array[0];
+    }
 }
